@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Guess Number</title>
-</head>
-<body>
-    <!-- ===================== header ====================== -->
-    <header>
-        <h1>Guess The Number</h1>
-        <p class="difficulty">(1-20)</p>
-        <button class="btn again">Again</button>
-        <button class="btn check">Check</button>
-        <div class="number">?</div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Guess Number</title>
+	</head>
+	<body>
+        <!--/ =================================================== -->
+        <!--/                       header                        -->
+        <!--/ =================================================== -->
+		<header>
+			<h1>Guess The Number</h1>
+			<p class="difficulty">(1-20)</p>
+			<button class="btn again">Again</button>
+			<button class="btn check">Check</button>
+			<div class="number">?</div>
+		</header>
 
-    <!-- ====================== main ======================= -->
-    <main>
-        <section class="left">
+        <!--\ =================================================== -->
+        <!--\                        main                         -->
+        <!--\ =================================================== -->
+		<main>
+            <!--# ====================== left ======================= -->
+			<section class="left">
+				<input type="number" class="guess" />
+				<button class="btn check">Check</button>
+			</section>
 
-            <input type="number" class="guess">
-            <button class="btn check">Check</button>
+            <!--# ====================== right ====================== -->
+			<section class="right">
+				<p class="msg">Game startıng</p>
+				<p>💯Score: <span class="score">10</span></p>
+				<p>🥇Top-Score: <span class="top-score">0</span></p>
+			</section>
+		</main>
 
-        </section>
-    </main>
-
-
-
-
-
-
-
-    <script src="./script.js"></script>
-</body>
+		<script src="./script.js"></script>
+	</body>
 </html>
